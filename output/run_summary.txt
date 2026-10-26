@@ -1,0 +1,55 @@
+Alerts raised
+check
+LOCATION_MISMATCH    1634
+NEGATIVE_STOCK       1441
+FIFO_VIOLATION        428
+SPLIT_STORAGE         136
+EXPIRY_RISK            99 
+
+Inventory reliability, last 7 days: 76.0% of active locations alert-free
+zone
+AMB    75.3
+CHL    76.8
+FRZ    76.6 
+
+Mismatch alert rate by hour (%)
+ts
+7     2.4
+8     1.8
+9     2.5
+10    2.3
+11    5.2
+12    5.6
+13    5.9
+14    2.4
+15    2.2
+16    1.8
+17    5.3
+18    4.8
+19    5.2
+20    5.4
+21    1.7
+22    2.1 
+
+Shelf bays with the highest mismatch alert rate (%)
+      rate  picks
+bay              
+B-08  15.7    198
+B-07  15.1    655
+I-04  14.6    396
+C-06  14.4    174
+B-06  14.0    473
+I-05  12.8    257
+C-08  11.6    292
+I-06  11.6    216 
+
+Detection quality vs injected ground truth
+            check  injected  flagged  true_positives  false_positives  missed  precision  recall    f1
+LOCATION_MISMATCH      1631     1634            1631                3       0      0.998   1.000 0.999
+   FIFO_VIOLATION       280      428             279              149       1      0.652   0.996 0.788
+    SPLIT_STORAGE       136      136             136                0       0      1.000   1.000 1.000
+      EXPIRY_RISK        97       99              96                3       1      0.970   0.990 0.980
+
+Injected problem shelves: B-06, B-07, B-08, C-06, C-07, C-08, I-04, I-05, I-06
+
+Outputs written to /mnt/attach/project-files/inventory-integrity/output

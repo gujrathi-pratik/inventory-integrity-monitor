@@ -1,0 +1,5 @@
+check,injected,flagged,true_positives,false_positives,missed,precision,recall,f1
+LOCATION_MISMATCH,1631,1634,1631,3,0,0.998,1.0,0.999
+FIFO_VIOLATION,280,428,279,149,1,0.652,0.996,0.788
+SPLIT_STORAGE,136,136,136,0,0,1.0,1.0,1.0
+EXPIRY_RISK,97,99,96,3,1,0.97,0.99,0.98
